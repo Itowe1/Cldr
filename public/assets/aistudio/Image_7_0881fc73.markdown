@@ -1,0 +1,173 @@
+---
+name: Nepali Calendar System
+colors:
+  surface: '#f7f9fb'
+  surface-dim: '#d8dadc'
+  surface-bright: '#f7f9fb'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f4f6'
+  surface-container: '#eceef0'
+  surface-container-high: '#e6e8ea'
+  surface-container-highest: '#e0e3e5'
+  on-surface: '#191c1e'
+  on-surface-variant: '#47464f'
+  inverse-surface: '#2d3133'
+  inverse-on-surface: '#eff1f3'
+  outline: '#787680'
+  outline-variant: '#c8c5d0'
+  surface-tint: '#5b598c'
+  primary: '#070235'
+  on-primary: '#ffffff'
+  primary-container: '#1e1b4b'
+  on-primary-container: '#8683ba'
+  inverse-primary: '#c4c1fb'
+  secondary: '#bb0112'
+  on-secondary: '#ffffff'
+  secondary-container: '#e02928'
+  on-secondary-container: '#fffbff'
+  tertiary: '#170700'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#381a00'
+  on-tertiary-container: '#cf7100'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#e3dfff'
+  primary-fixed-dim: '#c4c1fb'
+  on-primary-fixed: '#181445'
+  on-primary-fixed-variant: '#444173'
+  secondary-fixed: '#ffdad6'
+  secondary-fixed-dim: '#ffb4ab'
+  on-secondary-fixed: '#410002'
+  on-secondary-fixed-variant: '#93000b'
+  tertiary-fixed: '#ffdcc3'
+  tertiary-fixed-dim: '#ffb77d'
+  on-tertiary-fixed: '#2f1500'
+  on-tertiary-fixed-variant: '#6e3900'
+  background: '#f7f9fb'
+  on-background: '#191c1e'
+  surface-variant: '#e0e3e5'
+typography:
+  headline-xl:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 32px
+    fontWeight: '600'
+    lineHeight: 40px
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 24px
+    fontWeight: '600'
+    lineHeight: 32px
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '400'
+    lineHeight: 16px
+  label-md:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '500'
+    lineHeight: 20px
+  label-sm:
+    fontFamily: Inter
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  margin: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system establishes a digital experience for a modern Nepali calendar platform. The brand personality is rooted in cultural precision, trustworthiness, and contemporary utility. The visual narrative balances the deep spiritual and astronomical heritage of Nepal with a clean, digital-first interface. 
+
+The aesthetic style is **Corporate / Modern** mixed with high-clarity informational design, optimized for daily planning, astrological tracking, and event management. The UI evokes a sense of calm reliability and clarity, ensuring that complex date conversions, lunar phases, and cultural holidays are presented without cognitive clutter.
+
+## Colors
+
+The palette is anchored by deep rich indigo (`#1E1B4B`) to convey authority and structure, paired with Nepalese crimson red (`#DC2626`) as an intentional accent for holidays, important events, and today's active date. A warm neutral background (`#F8FAFC`) ensures optimal legibility across long viewing sessions, while a vibrant saffron tertiary (`#D97706`) highlights lunar phases and auspicious timings.
+
+## Typography
+
+Typography prioritizes extreme legibility for numerical data, dual-calendar systems (Bikram Sambat and Gregorian), and Devanagari script integration. Plus Jakarta Sans delivers a welcoming yet precise structural frame for headlines, while Inter provides neutral, highly legible metrics for calendar grids and date conversion tooling. Ensure all Devanagari numerals and text inherit proper vertical metrics to prevent baseline jitter in dense grid layouts.
+
+## Layout & Spacing
+
+The layout relies on a **Fixed grid** system optimized for desktop dashboards while scaling fluidly down to mobile viewports. The calendar grid uses a 7-column layout (Sunday through Saturday) with consistent 8px gutters to maintain visual separation between individual date cells. 
+
+- **Desktop:** 12-column overarching layout with a standard 24px margin and 1.5rem gutters.
+- **Tablet:** Condensed 8-column layout, reducing outer margins to 1rem.
+- **Mobile:** Single-column stacked layout where the calendar grid fills 100% of the horizontal canvas width, ensuring touch targets for date cells remain at a minimum of 44x44px.
+
+## Elevation & Depth
+
+Visual hierarchy is communicated primarily through clean tonal layers and low-contrast outlines, avoiding heavy drop shadows that add visual noise to data-dense calendars. 
+
+- **Surface Tiers:** Background canvases sit at `#F8FAFC`, while interactive cards, modals, and date picker dropdowns utilize pure white (`#FFFFFF`) surfaces framed with subtle neutral borders (`#E2E8F0`).
+- **Interactive States:** Hover and active states elevate elements using soft, diffused ambient shadows tinted with the primary indigo hue at low opacity (`rgba(30, 27, 75, 0.08)`), signaling interactivity without distraction.
+
+## Shapes
+
+A friendly, rounded design language (`roundedness` level 2) is applied across all UI components. Date cells, cards, and input containers use a base 0.5rem border radius, creating a modern, approachable feel. Major containers and modal dialogs scale up to `rounded-lg` (1rem) and `rounded-xl` (1.5rem) to soften the density of calendar matrices.
+
+## Components
+
+### Buttons
+- **Primary:** Deep indigo background with white text, 0.5rem border radius, and subtle state transitions for primary actions like "Convert Date" or "Save Event".
+- **Secondary / Ghost:** Outlined with neutral borders or transparent backgrounds, utilizing indigo text for secondary actions.
+- **Destructive / Holiday:** Uses Nepalese crimson red to highlight national holidays or cancellation actions.
+
+### Chips & Badges
+- Used to denote lunar phases (Purnima, Aunshi), tithis, and event categories. Small pill-shaped containers with soft background tints (e.g., light red tint for festivals, light amber for auspicious timings).
+
+### Checkboxes & Radio Buttons
+- Crisp square and circular inputs with indigo check states, designed for filtering calendar views (e.g., toggling public holidays vs. personal reminders).
+
+### Input Fields
+- High-contrast text inputs with 0.5rem rounded corners, paired with clear floating labels for dual-calendar conversion tools (BS to AD input fields).
+
+### Cards
+- Clean white containers featuring a 1px soft border and generous internal padding (`space-lg`), used for monthly overview summaries, panchang details, and daily horoscope widgets.
+
+### Specialized Components
+- **Calendar Matrix Grid:** 7x5 or 7x6 cell structures featuring dual-script date display (large Devanagari numerals stacked above smaller Gregorian equivalents), with distinct badge indicators for public holidays and lunar events.
+- **Date Converter Widget:** Side-by-side input panels with an animated directional transition icon for seamless cross-calendar translation.

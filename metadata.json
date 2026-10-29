@@ -1,0 +1,6 @@
+{
+  "name": "Nepali Calendar System",
+  "description": "Comprehensive Nepali Patro (Bikram Sambat) and Gregorian calendar with daily Vedic Panchang, BS-AD date converter, auspicious muhurat, festivals, holidays, and daily Rashifal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
